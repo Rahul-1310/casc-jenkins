@@ -2,7 +2,7 @@ jobs:
   - script: >
       folder('casc-jobs')
   - script: >
-      pipelineJob('api-job/CI') {
+      pipelineJob('casc-jobs/CI') {
         definition {
           cpsScm {
             scriptPath 'Jenkinsfile'
