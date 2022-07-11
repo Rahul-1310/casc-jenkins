@@ -1,10 +1,10 @@
 jobs:
   - script: >
-      folder("casc-jobs")
+      folder('casc-jobs')
   - script: >
-      pipelineJob("api-job/CI") {
+      pipelineJob('api-job/CI') {
         definition {
-          cpsscm{
+          cpsScm {
             scriptPath 'Jenkinsfile'
             lightweight true
             scm {
