@@ -1,0 +1,21 @@
+jobs:
+  - script: >
+      folder('casc-jobs')
+  - script: >
+      pipelineJob('casc-jobs/CD') {
+        definition {
+          cpsScm {
+            scriptPath 'CD/Jenkinsfile'
+            lightweight true
+            scm {
+              git {
+                remote {
+                  url "https://github.com/Rahul-1310/casc-jenkins"
+                }
+                branch "*/master"
+                extensions {}
+              }
+            }
+          }
+        }
+      }
