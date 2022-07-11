@@ -10,9 +10,9 @@ jobs:
             scm {
               git {
                 remote {
-                  url "https://github.com/Rahul-1310/casc-jenkins"
+                  url 'https://github.com/Rahul-1310/casc-jenkins'
                 }
-                branch "*/main"
+                branch '*/master'
                 extensions {}
               }
             }
